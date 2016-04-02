@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>316</title>
+</head>
+<style>
+	  *{
+    	margin: 0;
+    	padding: 0;
+    }
+    ul,ol{
+		list-style: none;
+    }
+	#container{
+		width: 980px;
+		height: 1380px;
+	}
+	#container .nav{
+		width: 890px;
+		height: 1386px;
+		margin: 0 auto;
+		padding-bottom: 10px;
+
+	}
+	#container .header-head1{
+		width: 110px;
+		height: 61px;
+		background: #d45d5c;
+		float: left;
+
+	}
+	#container .header{
+		border-bottom: 2px solid #938e8c;
+		
+	}
+	#container .header-head2{
+		width: 980px;
+		height: 61px;
+	}
+	#container .logo{
+		padding-top: 45px;
+		font-size: 12px;
+		color: #ffffff;
+		font-family: 黑体;
+		padding-left: 10px;
+		display: inline-block;
+		float: left;
+	}
+	#container .shijian{
+		float: right;
+		padding-right: 92px;
+		padding-top: 45px;
+		font-size: 12px;
+		color: #d45d5c;
+		font-family: 黑体;
+		
+		
+	}
+	#news{
+		width: 892px;
+		height: 350px;
+	}
+	#news .tupian{
+		width: 641px;
+		height: 301px;
+		float: left;
+		background: url(img/songzhongji.png) no-repeat;
+		background-size: 641px 301px;
+		margin-top: 45px;
+	}
+	#news .biaoti{
+		width: 203px;
+		height: 301px;
+		float: right;
+		border-top: 2px solid #cc8091;
+		margin-top: 35px;
+	}
+	#news .lvse{
+		width: 191px;
+		height: 301px;
+		float: left;
+		background: green;
+		opacity: 0.5;
+	}
+	#news .hongse{
+		width: 191px;
+		height: 301px;
+		float: right;
+		background: pink;
+		opacity: 0.5;
+	}
+	#news .biaoti1{
+		font-size: 24px;
+		color: #000000;
+		text-decoration: underline;
+	}
+	#news .biaoti1:first-letter{
+		font-size: 28px;
+		font-family: 微软雅黑;
+		line-height: 40px;
+
+	}
+	#news .about{
+		font-size: 12px;
+		color: #676767;
+		font-family: 楷体;
+		line-height: 10px;
+	}
+	#news .shuzi{
+		font-size: 116px;
+		color: #75b86b;
+		font-family: 微软雅黑;
+		
+		font-style: oblique;
+	}
+	#news .shu{
+		float: left;
+		font-size: 55px;
+		color: #cc8091;
+		font-family: 微软雅黑;
+		margin-bottom: 10px;
+
+	}
+	#news ul{
+		float: right;
+		padding-top: 20px;
+		padding-right: 30px;
+	}
+	#news .css1{
+		font-family: 微软雅黑;
+		font-size: 21px;
+		color: #cc8091;
+	}
+	#news .css2{
+		font-size: 12px;
+		color: #d5d5d6;
+		font-family: 微软雅黑;
+	}
+
+	#myblog{
+		width: 641px;
+		height: 220px;
+		margin-top: 40px;
+	}
+	#myblog .myblog-1{
+		width: 221px;
+		height: 220px;
+		float: left;
+		margin-right: 10px;
+	}
+	#myblog .myblog-2{
+		width: 200px;
+		height: 220px;
+		float: left;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	#myblog .myblog-3{
+		width: 160px;
+		height: 220px;
+		float: right;
+		margin-right: 20px;
+	}
+	#myblog .p1{
+		font-size: 16px;
+		color: #428c59;
+		font-family: 微软雅黑;
+		text-decoration: underline;
+		font-weight: bold;
+	}
+	#myblog .p2{
+		font-size: 12px;
+		color: #767777;
+		font-family: 宋体;
+		line-height: 16px;
+		margin-top: 10px;
+
+	}
+	#myblog .p3{
+		font-size: 16px;
+		color: #d2994f;
+		font-family: 微软雅黑;
+		text-decoration: underline;
+		font-weight: bold;
+
+	}
+	#myblog .p4{
+		font-size: 12px;
+		
+		line-height: 16px;
+		color: #767777;
+		font-family: 宋体;
+		margin-top: 10px;
+	}
+	#myblog .p5{
+		font-size: 16px;
+		color: #cc7680;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	#myblog .p6{
+		margin-top: 10px;
+		font-size: 12px;
+		color: #767777;
+		font-family: 宋体;
+		line-height: 16px;
+	}
+	#myblog .ul1{
+		float: left;
+		margin-top: 100px;
+		font-size: 12px;
+		color: #231815;
+		line-height: 16px;
+		opacity: 70%
+
+	}
+	#myblog .ul1 li{
+		font-family:微软雅黑;
+	}
+	#myblog .ul2{
+		float: right;
+		margin-top: 100px;
+		margin-right: 65px;
+		font-size: 12px;
+		font-style: oblique;
+		line-height: 16px;
+		font-family:微软雅黑;
+		color: #cd4a48;
+	}
+
+	#footer{
+		width: 900px;
+		height: 780px;
+		position: relative;
+		border-bottom: 1px solid #938e83;
+	}
+	#footer .zuo{
+		width: 415px;
+		height: 780px;
+		float: left;
+		margin-top: 30px;
+		position: relative;
+	}
+	#footer .you{
+		width: 465px;
+		height: 780px;
+		float: right;
+		margin-top: 30px;
+		position: relative;
+		padding-left: 10px;
+	}
+	#footer .shang{
+		width: 415px;
+		height: 200px;
+		border-bottom: 2px solid #11456b; 
+	}
+	#footer .xia{
+		width: 415px;
+		height: 580px;
+	}
+	#footer .p1{
+		font-size: 72px;
+		color: #f5e327;
+		font-weight: bold;
+		font-style: oblique;
+		font-family: 黑体;
+		float: left;
+		position: relative;
+	}
+	#footer .p2{
+		float: right;
+		font-size: 42px;
+		color: #11456b;
+		font-weight: bold;
+		line-height: 16px;
+		font-family: 黑体;
+		margin-top: 30px;
+		position: relative;
+	}
+	#footer .p3{
+		padding-top: 90px;
+		font-size: 42px;
+		color: #11456b;
+		font-weight: bold;
+		font-family: 黑体;
+	}
+	#footer .p4{
+		font-size: 33px;
+		color: #11456b;
+		font-weight: bold;
+		font-family: 黑体;
+	}
+	#footer .p5{
+		font-size: 70px;
+		color: #f5e327;
+		font-family: 微软雅黑;
+		float: left;
+		padding-top: 20px;
+		position: relative;
+	}
+	#footer .p6{
+		float: right;
+		width: 250px;
+		padding-top: 30px;
+		padding-right: 40px;
+		font-size: 12px;
+		color: #767777;
+		font-family: 宋体;
+		line-height: 16px;
+		position: relative;
+		text-align: center;
+	}
+	#footer .xia-zuo{
+		width: 250px;
+		height: 400px;
+		position: relative;
+		float: left;
+	}
+	#footer .xia-you{
+		width: 165px;
+		height:400px;
+		float: right;
+		position: relative;
+	}
+	#footer .p7{
+		font-size: 12px;
+		color: #767777;
+		font-family: 宋体;
+		line-height: 16px;
+
+	}
+	#footer .p8{
+   		font-size: 12px;
+		color: #767777;
+		font-family: 宋体;
+		line-height: 16px;
+		text-indent: 2em;
+	}
+	#footer .xia-you{
+		background: url(img/songzhongji3.jpg) no-repeat;
+		background-size: 165px 330px;
+	}
+	
+	#footer .p{
+		position: absolute;
+		padding-top:480px;
+		font-size: 12px;
+		color: #767777;
+		font-family: 宋体;
+		line-height: 16px;
+		text-indent: 2em;
+	}
+
+	#footer .you-shang{
+		width: 458px;
+		height: 275px;
+		background: url(img/songzhongji4.jpg) no-repeat;
+		background-size: 458px 275px;
+	}
+	#footer .jishu{
+		width: 458px;
+		height: 61px;
+		margin-top: 214px;
+		position: absolute;
+		background: gray;
+		opacity: 0.7;
+	}
+	#footer .jishu-1{
+		border-left: 3px solid #72b16a;
+		width: 400px;
+		height: 44px;
+		margin-left: 40px;
+		margin-top: 10px;
+	}
+	#footer .p11{
+		font-size: 26px;
+		color: #ffffff;
+		font-family: 微软雅黑;
+		margin-left: 10px;
+		float: left;
+		
+	}
+	#footer .p12{
+		font-size: 12px;
+		color: #72b16a;
+		font-style: oblique;
+		margin-top: 17px;
+		float: right;
+		margin-right: 180px;
+		font-family: 微软雅黑;
+		line-height: 140%;
+	}
+	#footer .you-xia{
+		width: 459px;
+		height: 400px;
+		margin-top: 60px;
+		background: #eeedd6;
+		position: relative;
+	}
+	#footer .p13{
+	width: 459px;
+    height: 15px;
+    
+	}
+	#footer .ul1{
+		margin-left: 40px;
+		margin-top: 50px;
+		position: absolute;
+		float: left;
+		font-size: 16px;
+		color: #5a5b5b;
+		font-family: 宋体;
+		line-height: 20px;
+		text-align: left;
+		position: relative;
+
+	}
+	#footer .p13{
+		padding-bottom: 30px;
+		text-align: left;
+	}
+	#footer .ul2{
+		float: right;
+		margin-top: 50px;
+		margin-right: 3px;
+		position: absolute;
+		margin-left:420px;
+
+	}
+	#footer .p14{
+		padding-bottom: 30px;
+		font-size: 16px;
+		color: #5a5b5b;
+		font-family: 宋体;
+		line-height: 20px;
+	}
+	#footer .xiazuo{
+		width: 260px;
+		height: 160px;
+		background: #d45d5c;
+		position: absolute;
+		margin-top: 240px;
+	}
+	#footer .shu{
+		float: left;
+		width: 70px;
+		margin-top: 40px;
+		height: 86px;
+		border-right: 2px solid #ffffff;
+		text-align: center;
+	}
+	#footer .p31{
+		font-size: 110px;
+		color: #ffffff;
+		font-family: 微软雅黑;
+		padding-left: 6px;
+		height: 110px;
+		padding-bottom: 10px;
+		text-align: center;
+		line-height: 80px;
+		}
+	#footer .ul3{
+		width: 180px;
+		float: right;
+		margin-top: 40px;
+	}
+	#footer .one{
+		float: right;
+		width:180px;
+		font-size: 21px;
+		color: #ffffff;
+		line-height: 24px;
+		font-style: oblique;
+	}
+	#footer .hello{
+		font-size: 12px;
+		color: #ffffff;
+		font-family: 黑体;
+		/*line-height: 6px;*/
+		margin-top: 6px;
+	}
+	#footer .xiayou{
+		height: 160px;
+		width: 190px;
+		position: absolute;
+		margin-top: 250px;
+		margin-left: 270px;
+	}
+	/*#footer .xiayou1{
+		font-size: 14px;
+		color: #5a5b5b;
+		font-family: 黑体;
+		line-height: 16px;
+		font-style: oblique;
+	}*/
+	#footer .xiayou1{
+		font-size: 72px;
+		color: #d45d5c;
+		font-family: 黑体;
+		float: left;
+		height: 30px;
+
+
+	}
+	#footer .xiayou2{
+	  font-size: 14px;
+		color: #5a5b5b;
+		font-family: 黑体;
+		line-height: 16px;
+		font-style: oblique;
+		float: right;
+		padding-top: 13px;
+		padding-right: 30px;
+	}
+	#footer .xiayou3{
+		font-size: 14px;
+		color: #5a5b5b;
+		font-family: 黑体;
+		line-height: 16px;
+		font-style: oblique;
+		position: absolute;
+		padding-top: 30px;
+	}
+	#footer .xiayou4{
+		font-size: 72px;
+		color: #d45d5c;
+		font-family: 黑体;
+		padding-top: 100px;
+		padding-left: 130px;
+		height: 30px;
+	}
+
+</style>
+<body>
+	<div id="container">
+		<div class="nav">
+			<div class="header">
+				
+				<div class="header-head2">
+					<div class="header-head1">
+						<p class="logo">ife.baidu.com</p>
+					
+					</div>
+					<p class="shijian">2016.03</p>
+
+				</div>
+			</div>
+			<div id="news">
+				<div class="tupian">
+			
+					<div class="lvse"></div>
+					<div class="hongse"></div>
+				</div>
+				<div class="biaoti">
+					<p class="biaoti1">ABOUT</p>
+					<p class="biaoti1">TECHNOLOGE</p>
+					<p class="about">About technologe about technologe about technologe</p>
+					<p class="shuzi">700</p>
+					<p class="shu">3.2</p>
+					<ul>
+						<li class="css1">css</li>
+						<li class="css2">csscsscsscsscss</li>
+					</ul>
+				</div>
+			</div>
+			<div id="myblog">
+				<div class="myblog-1">
+					<p class="p1">What</p>
+					<p class="p2">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+				</div>
+				<div class="myblog-2">
+					<p class="p3">When</p>
+					<p class="p4">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端</p>
+				</div>
+				<div class="myblog-3">
+					<p class="p5">How</p>
+					<p class="p6">前端前端前端前端前端前端前端前端前端前端前端前端</p>
+					<ul class="ul1">
+						<li>What-------</li>
+						<li>What-------</li>
+						<li>What-------</li>
+					</ul>
+					<ul class="ul2">
+						<li>40%</li>
+						<li>30%</li>
+						<li>30%</li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="zuo">
+					<div class="shang">
+						<p class="p1">THE</p>
+						<p class="p2">TECHNOLOGE</p>
+						<p class="p3">OF FRONT</p>
+						<p class="p4">前端技术领域</p>
+					</div>
+					<div class="xia">
+						<div class="xia-1">
+							<p class="p5">前</p>
+							<p class="p6">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+						</div>
+						<div class="xia-2">
+							<div class="xia-zuo">
+								<p class="p7">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+								<p class="p8">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+							</div>
+							<div class="xia-you"></div>
+							<div class="p">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				<div class="you">
+					<div class="you-shang">
+						<div class="jishu">
+							<div class="jishu-1">
+								
+									<p class="p11">前端技术</p>
+									<p class="p12">前端技术前端技术</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="you-xia">
+						<ul class="ul1">
+							<li class="p13"><img src="img/sanjiao.gif" alt="">前端前端前端前端前端前端 .....................</li>
+							<li class="p13"><img src="img/sanjiao.gif" alt="">前端前端前端前端 .............................</li>
+							<li class="p13"><img src="img/sanjiao.gif" alt="">前端前端前端前端前端前端前端 .................</li>
+						</ul>
+						<ul class="ul2">
+							<li class="p14">前端</li>
+							<li class="p14">前端</li>
+							<li class="p14">前端</li>
+						</ul>
+						<div class="xiazuo">
+							<div class="shu">
+								<p class="p31">0</p>
+							</div>
+							<ul class="ul3">
+								<p class="one">ONE TWO</br>THREE FORE FIVE</p>
+								<p class="hello">hello world hello world</br>hello world</p>
+
+							</ul>
+						</div>	
+						<div class="xiayou">
+							<ul>
+								<p class="xiayou1">" </p>
+								<p class="xiayou2">hello world hello</p>
+								<p class="xiayou3">hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world</p>
+								<p class="xiayou4">"</p>
+							</ul>
+							
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
